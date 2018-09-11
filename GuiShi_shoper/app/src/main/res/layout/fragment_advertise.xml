@@ -1,0 +1,159 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.culturer.guishi_shoper.pages.advertise.AdvertiseFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/name"
+            android:text="有家商铺"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"/>
+
+        <EditText
+            android:id="@+id/desc"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:hint="商铺简介"
+            android:gravity="start"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:background="@drawable/bg_circle1"/>
+
+        <EditText
+            android:id="@+id/desc1"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:hint="商铺描述"
+            android:gravity="start"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/bg_circle1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tab1"
+                android:text="标签一"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="10dp"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_circle1"/>
+            <TextView
+                android:id="@+id/tab2"
+                android:text="标签二"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="10dp"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_circle1"/>
+            <TextView
+                android:id="@+id/tab3"
+                android:text="标签三"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="10dp"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_circle1"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/address"
+            android:text="湖北省武汉市XXX区XXX号"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_circle1"/>
+        <LinearLayout
+            android:background="@drawable/bg_circle1"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="停业" />
+
+            <TextView
+                android:id="@+id/stop_msg"
+                android:text="家里人生病，停业3天。"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="10dp"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@null"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/open_time"
+            android:text="营业时间：9:00 ~ 21:00"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="10dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_circle1"/>
+        <TextView
+            android:id="@+id/tel"
+            android:layout_marginTop="10dp"
+            android:text="联系电话：18588263531"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="10dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_circle1"/>
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_margin="10dp"
+            android:text="提交修改"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</ScrollView>

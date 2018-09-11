@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/group_id"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:lines="1"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="订单编号:9527"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/all_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="金额:￥ 952700"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:lines="3"
+        android:ellipsize="end"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="投诉内容:产品变质，完全无法使用。产品变质，完全无法使用。产品变质，完全无法使用。产品变质，完全无法使用。产品变质，完全无法使用。产品变质，完全无法使用。产品变质，完全无法使用。"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:lines="1"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="处理结果:与客户协商，退款。"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="处理"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</LinearLayout>

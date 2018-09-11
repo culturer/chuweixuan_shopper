@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">鬼市_商家版</string>
+    <string name="title_home">商    品</string>
+    <string name="title_dashboard">订    单</string>
+    <string name="title_notifications">编    辑</string>
+    <string name="title_saleafter">售    后</string>
+    <string name="title_send">配    送</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

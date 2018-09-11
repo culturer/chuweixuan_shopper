@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.culturer.guishi_shoper"
+        minSdkVersion 23
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    dexOptions {
+        preDexLibraries = false
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+
+    //3d地图
+    compile 'com.amap.api:3dmap:6.1.0'
+//    //导航
+//    compile 'com.amap.api:navi-3dmap:6.1.0'
+//    //搜索
+//    compile 'com.amap.api:search:6.1.0'
+    //定位
+    compile 'com.amap.api:location:3.8.0'
+    //RxTools工具集
+    compile 'com.github.vondear:RxTools:v1.7.8.3'
+    //http库
+    compile 'com.kymjs.rxvolley:rxvolley:2.0.0'
+// If use okhttp function
+    compile 'com.kymjs.rxvolley:okhttp:1.1.4'
+//or
+    compile 'com.kymjs.rxvolley:okhttp3:1.1.4'
+    //添加Gson依赖
+    compile 'com.google.code.gson:gson:2.8.2'
+    //相册库
+    implementation 'com.yanzhenjie:album:2.1.2'
+    //导入glide
+    compile 'com.github.bumptech.glide:glide:4.6.1'
+    //oss库
+    compile 'com.aliyun.dpa:oss-android-sdk:2.8.4'
+    compile 'com.squareup.okio:okio:1.13.0'
+    //下拉刷新
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-12'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-12'//没有使用特殊Header，可以不加这行
+    //解决方法数超过65535的问题
+    compile 'com.android.support:multidex:1.0.3'
+
+    //阿里云OSS
+    compile 'com.aliyun.dpa:oss-android-sdk:2.8.4'
+
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
